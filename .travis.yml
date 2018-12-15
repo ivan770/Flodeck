@@ -1,8 +1,10 @@
 language: php
 php:
   - 7.2
+services:
+  - mysql
 install:
    - mysql -e 'create database db_test;'
    - composer install
 env:
-  - APP_KEY=base64:rFxqEtSEom9f1nAyqZv1HFOxEdj/WhPtLdq5y8SOP5A= APP_NAME=Flodeck APP_ENV=local APP_DEBUG=true DB_CONNECTION=mysql DB_HOST=localhost DB_DATABASE=db_test DB_USERNAME=db DB_PASSWORD=secret
+  - APP_KEY=base64:rFxqEtSEom9f1nAyqZv1HFOxEdj/WhPtLdq5y8SOP5A= APP_NAME=Flodeck APP_ENV=local APP_DEBUG=true DB_CONNECTION=mysql DB_HOST=localhost DB_DATABASE=db_test DB_USERNAME=travis
