@@ -4,7 +4,4 @@ php:
 install:
    - composer install
 env:
-  - APP_KEY=base64:rFxqEtSEom9f1nAyqZv1HFOxEdj/WhPtLdq5y8SOP5A=
-  - APP_NAME=Flodeck
-  - APP_ENV=local
-  - APP_DEBUG=true
+  - APP_KEY=base64:rFxqEtSEom9f1nAyqZv1HFOxEdj/WhPtLdq5y8SOP5A= APP_NAME=Flodeck APP_ENV=local APP_DEBUG=true
