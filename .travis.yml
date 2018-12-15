@@ -4,7 +4,7 @@ php:
 services:
   - mysql
 install:
-   - mysql -e 'create database db_test;'
+   - mysql -e 'create database db_test encoding utf8mb4;'
    - composer install
    - php artisan migrate
 env:
